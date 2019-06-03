@@ -1,0 +1,30 @@
+runtime: php
+env: flex
+
+runtime_config:
+  document_root: public
+
+# Ensure we skip ".env", which is only for local development
+skip_files:
+  - .env
+
+env_variables:
+  # Put production environment variables here.
+  APP_LOG: errorlog
+  APP_KEY: base64:OMGURPAbMBxWj4/O/fwP3/aQDfqm5gDAoV9AusW4mts=
+  CACHE_DRIVER: database
+  SESSION_DRIVER: database
+  FILESYSTEM_DRIVER: gcs
+  GOOGLE_CLOUD_PROJECT_ID: csc105-group5-aprender
+  GOOGLE_CLOUD_STORAGE_BUCKET: csc105-group5-aprender.appspot.com
+  ## Set these environment variables according to your CloudSQL configuration.
+  DB_HOST: localhost
+  DB_DATABASE: aprender
+  DB_USERNAME: root
+  DB_PASSWORD: 123456789
+  DB_SOCKET: "/cloudsql/csc105-group5-aprender:asia-east1:aprender01"
+
+beta_settings:
+    # for Cloud SQL, set this value to the Cloud SQL connection name,
+    # e.g. "project:region:cloudsql-instance"
+    cloud_sql_instances: "csc105-group5-aprender:asia-east1:aprender01"

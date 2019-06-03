@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign Up Student</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- Stylesheet
+          ================================================== -->
+    <link rel="stylesheet" type="text/css" href="css/styleHome.css">
+    <link rel="stylesheet" type="text/css" href="css/styleSignin.css">
+    <link rel="stylesheet" type="text/css" href="css/styleSignUpHome.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/styleSignUp.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rochester" rel="stylesheet">
+
+    <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
+    <script type="text/javascript" src="js/contact_me.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/AllSign.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="space_nav _mobile"></div>
+        <div class="section-title text-center">
+            <h2><b>Sign up for Student</b></h2>
+        </div>
+
+        <form action="/action_page.php" method="post" enctype="multipart/form-data" class="needs-validation">
+            <div class="row">
+                <div class="col-md-3 text-center student">
+                    <div><img id='profile_picture' src="img/portrait.png"></div>
+                    <br>
+                    <input type="file" name="userfile" onchange="fileValidation1()">
+                    <input type="hidden" name="txt_Image" id="txt_Image" value="">
+                    <button type="submit" class="btn btn-primary upload">UPLOAD</button>
+                </div>
+
+                <div class="col-md-9 student">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="topic"><b>Your Information</b></h3>
+                        </div>
+
+                        <div class="col-sm-4 col-md-4">
+                            <div class="form-group">
+                                <label for="text">Name :</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter name" name="name" value="">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 col-md-4">
+                            <div class="form-group">
+                                <label for="text">Lastname :</label>
+                                <input type="text" class="form-control" id="lastname" placeholder="Enter lastname"
+                                    name="lastname" value="">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 col-md-4">
+                            <div class="form-group">
+                                <label for="text">Nickname :</label>
+                                <input type="text" class="form-control" id="nickname" placeholder="Enter nickname"
+                                    name="nickname" value="">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 col-md-4">
+                            <div class="form-group">
+                                <label for="gender">Gender :</label>
+                                <select class="selected form-control" name="txt_Education[]">
+                                    <option value="0">Gender</option>
+                                    <option value="1">Male</option>
+                                    <option value="2">Female</option>
+                                    <option value="3">Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 col-md-4">
+                            <div class="form-group">
+                                <label for="phone">Phone Number :</label>
+                                <input type="text" class="form-control" id="phone" placeholder="Enter phone number"
+                                    name="phone" value="" maxlength="10"
+                                    onKeyPress="return CheckNumericKeyInfo(event.keyCode, event.which);">
+                            </div>
+                        </div>
+
+                        <div class="col-md-12"></div>
+                        <div class="clearfix"></div>
+
+                        <br>
+                        <div class="col-md-12">
+                            <h3 class="topic"><b>Your Education</b></h3>
+                            <div class="clearfix"></div>
+                        </div>
+
+                        <div class="col-sm-4 col-md-4">
+                            <div class="form-group">
+                                <label for="grade">Grade :</label>
+                                <select class="selected form-control" name="txt_Education[]">
+                                    <option value="0">Grade </option>
+                                    <option value="1">Primary </option>
+                                    <option value="2">Junior High School</option>
+                                    <option value="3">Senior High School</option>
+                                    <option value="4">University</option>
+                                    <option value="5">Others</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 col-md-4">
+                            <div class="form-group">
+                                <label for="school">School :</label>
+                                <input type="text" class="form-control" id="school" name="school" value=""
+                                    placeholder="Enter school" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <div class="col-12" id="bg">
+                <div class="row">
+                    <div class="col-md-12 padding">
+                        <h3 class="topic"><b>Create Your Account</b></h3>
+                        <div class="clearfix"></div>
+                    </div><!-- col -->
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-4 col-md-3 padding2">
+                        <div class="form-group">
+                            <label for="email">Email :</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email"
+                                value="" onchange="emailCheck(this);">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-md-3 padding2">
+                        <div class="form-group">
+                            <label for="pwd">Password:</label>
+                            <input type="password" class="form-control" id="pwd" placeholder="Enter password"
+                                name="pswd">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-md-3 padding2">
+                        <div class="form-group">
+                            <label for="confirm_pwd">Confirm Password:</label>
+                            <input type="password" class="form-control" id="confirm_pwd" placeholder="Comfirm password"
+                                name="confirm_pswd">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <br>
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <a href="SignUp-tutor2.html">
+                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                </a>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

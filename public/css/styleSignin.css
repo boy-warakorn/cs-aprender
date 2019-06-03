@@ -1,0 +1,54 @@
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px !important;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+button:hover {
+  opacity: 0.8;
+}
+.container {
+  padding: 16px;
+}
+
+.modal-content1 {
+  background-color:  #ffc807;
+  text-decoration: none;
+}
+.modal-body{
+  height: auto;
+}
+  
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  margin-left: 85%;
+  font-size: 35px;
+  font-weight: bold;
+}
+  
+.close:hover,.close:focus {
+  color: red;
+  cursor: pointer;
+}
+.Signin[type=submit]{
+  color: white;
+  cursor: pointer;
+  background-color: #393e82;
+  width: 100%;
+}
+.Signin[type=submit]:hover{
+  color: white;
+  cursor: pointer;
+  background-color: blue;
+  width: 100%;
+}
+.Signin{
+  height: 50px;
+  margin-top: 10px;
+}
+#loginModal{
+  overflow:scroll;
+  margin-top: 5%; 
+}

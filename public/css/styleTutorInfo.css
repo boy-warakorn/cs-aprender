@@ -1,0 +1,138 @@
+#tagname{
+    position: absolute;
+    top: 85px;
+}
+
+#hearder{
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+}
+
+#pic{
+    overflow: hidden;
+    width: 288px;
+    margin: 0px;
+    position: relative;
+    top: 320px;
+    left: 20px;
+    max-width:100%;
+    height:auto;
+}
+
+#aboutme{
+    position: relative;
+    top: 300px;
+    left: 0%;
+}
+
+.strong{
+    font-size: 18px;
+    color: #ffc808;
+    overflow: hidden;
+}
+
+.ans{
+    font-size: 18px;
+    color: #393e82;
+    position: relative;
+    right: -50px;
+    overflow: hidden;
+}
+
+#subject{
+    position: relative;
+    top: 75px;
+}
+
+div#sub{
+    position: relative;
+    top: 110px;
+}
+
+#schedule{
+    position: relative;
+    top: 150px;
+}
+
+#timeday{
+    width: 50px;
+    position: relative;
+    right: -200px;
+    top: 38px;
+}
+
+table{
+    width: 80%;
+    position: relative;
+    top: 110px;
+    left: 80px;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #ffc808;
+    color: white;
+}
+
+th,td{
+    font-size: 20px;
+    text-align: center;
+}
+
+tr:nth-child(odd){
+    background-color: white;
+}
+
+.section-title h2 {
+	font-family: 'Raleway', cursive;
+	color: #393e82;
+	font-size: 4em;
+	font-weight: 400;
+    margin-top: 0;
+    position: relative;
+    right: -8px;
+}
+
+#place{
+    position: relative;
+    top: 60px;
+}
+
+#map{
+    position: relative;
+    top: 20px;
+    left: 5px;
+}
+
+.button{
+    width: 100%;
+    position: relative;
+    top: 100px;
+    background: #ffc808;
+    color: #393e82;
+}
+
+.button:hover{
+    background: #393e82;
+    color: #ffc808;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.container-fluid{
+    padding: 0;
+}
+
+.inline{
+    position: relative;
+    display: inline-block;
+}
+
+@media screen and (max-width: 1024px) {
+    table{
+        position: relative;
+        left: 59px;
+    }
+}
+
+

@@ -1,0 +1,24 @@
+.bglogin {
+    background: url(../img/classroom3.jpg) center center no-repeat;
+
+}
+.loginRegisHead{
+    font-family: 'Raleway',cursive;
+    text-shadow: 5px 5px #FFc807;
+    color: #e85738;
+    font-size: 5em;
+}
+html{
+    overflow: auto;
+}
+b::after{
+   position: absolute;
+   content: "";
+   background: #d43031;
+   height: 2px;
+   width: 70px;
+   bottom: 0;
+   margin-left: -35px;
+   left: 50%;
+
+}
